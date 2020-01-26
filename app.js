@@ -20,6 +20,11 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.listen(PORT, 'localhost', function(err) {
   if (err) {
     console.log(err);

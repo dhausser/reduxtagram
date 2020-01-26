@@ -7,16 +7,16 @@
     "build": "npm run clean && npm run build:webpack",
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
-    "start": "node devServer.js",
+    "start": "node app.js",
     "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wesbos/Learn-Redux.git"
+    "url": "https://github.com/dhausser/reduxtagram.git"
   },
-  "author": "Wes Bos",
+  "author": "Davy Hausser",
   "license": "MIT",
-  "homepage": "https://github.com/wesbos/Learn-Redux",
+  "homepage": "https://reduxtagram-dhausser.herokuapp.com/",
   "dependencies": {
     "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
