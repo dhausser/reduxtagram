@@ -1,25 +1,54 @@
 {
-  "name": "reduxtagram",
+  "name": "learn-redux",
   "version": "1.0.0",
-  "description": "A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.",
-  "main": "app.js",
+  "description": ":) ",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/styles/style.styl -o ./src/styles/style.css",
+    "styles:watch": "npm run styles -- -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhausser/reduxtagram.git"
+    "url": "https://github.com/dhausser/reduxtagram.git"
   },
-  "keywords": [],
   "author": "Davy Hausser",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dhausser/reduxtagram/issues"
-  },
   "homepage": "https://reduxtagram-dhausser.herokuapp.com/",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "autoprefixer-stylus": "^1.0.0",
+    "react": "^15.0.2",
+    "react-addons-css-transition-group": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.0",
+    "react-router-redux": "^4.0.4",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.2.3",
+    "redux": "^3.5.2",
+    "rimraf": "^2.5.2",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "expect": "^1.18.0",
+    "expect-jsx": "^2.5.1",
+    "mocha": "^5.2.0",
+    "react-addons-test-utils": "^15.0.2",
+    "react-scripts": "^3.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
